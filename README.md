@@ -42,5 +42,4 @@ std::vector<void*> LoadImages(LPDIRECT3DDEVICE9 pDevice, std::vector<std::pair<u
     Images.push_back(Image);
   }
 }
-    
 ```
