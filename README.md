@@ -9,13 +9,15 @@ Below is an example how you could use the created header file.
 
 # Usage of the binary
 
-Step 1: Goto https://cloudconvert.com/gif-to-png Upload your GIF select convert to PNG, convert it and download the zip.
+Step 1: Goto https://cloudconvert.com/gif-to-png (not associated).
 
-Step 2: Unzip the files into a empty folder.
+Step 2: Upload your GIF select convert to PNG, convert it and download the zip.
 
-Step 3: Drag and drop "yourfile-1.png" over gthp-converter.exe.
+Step 3: Unzip the files into a empty folder.
 
-Step 4: In the directory of your gthp-converter should be a new file called "yourfile.hpp".
+Step 4: Drag and drop "yourfile-1.png" over gthp-converter.exe.
+
+Step 5: In the directory of your gthp-converter should be a new file called "yourfile.hpp".
 
 
 # Example usage of the header file
