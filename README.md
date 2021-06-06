@@ -23,24 +23,24 @@ Step 5: In the directory of your gthp-converter should be a new file called "you
 # Example usage of the header file
 
 ```cpp
+
+std::vector<void*> LoadImages(LPDIRECT3DDEVICE9 pDevice, std::vector<std::pair<unsigned char*, int>>& ImageData) {
+
+  std::vector<void*> Images;
   
-  std::vector<void*> LoadImages(LPDIRECT3DDEVICE9 pDevice, std::vector<std::pair<unsigned char*, int>>& ImageData) {
+  for (int i = 0; i < ImageData.size(); i++) {
   
-    std::vector<void*> Images;
+    PDIRECT3DTEXTURE9 Image;
   
-	  for (int i = 0; i < ImageData.size(); i++) {
+    auto Result = D3DXCreateTextureFromFileInMemory(pDevice, ImageData[i].first, ImageData[i].second, &Image);
   
-	  	PDIRECT3DTEXTURE9 Image;
+    if (Result != S_OK) {
   
-	  	auto Result = D3DXCreateTextureFromFileInMemory(pDevice, ImageData[i].first, ImageData[i].second, &Image);
-  
-	  	if (Result != S_OK) {
-  
-	  		continue;
-	  	}
-  
-	  	Images.push_back(Image);
-	  }
+      continue;
+    }
+    
+    Images.push_back(Image);
   }
+}
     
 ```
