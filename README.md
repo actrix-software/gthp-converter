@@ -2,7 +2,7 @@
 
 Formats a GIF to an array of PNGs declared in a C++ header file. 
 
-Since there is no support for GIFs in it show s an easy way to use GIFs in d3d9.
+Since there is no support for GIFs in d3d9, it shows an easy way to use them.
 
 Below is an example how you could use the created header file.
 
