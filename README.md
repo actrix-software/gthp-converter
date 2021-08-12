@@ -43,3 +43,8 @@ std::vector<void*> LoadImages(LPDIRECT3DDEVICE9 pDevice, std::vector<std::pair<u
   }
 }
 ```
+
+
+# Warnings
+
+If your GIF has to many frames, there is a very high chance that your run out of memory quickly! ;)
